@@ -1,7 +1,7 @@
 /* GENERAL HTML STYLING */
 body{
-    color: #d10206;
-    background-color: white;
+    color: white; /* #d10206; alt color*/
+    background-color: black;
     font-family: 'Inter Tight', sans-serif;
     margin: 3%;
     /* overflow-y: auto; Enabling vertical scrolling */
@@ -15,7 +15,7 @@ body{
         font-size: 4vw;
     }
     .container {
-        margin-bottom: 70%;
+        margin-bottom: 50%;
     }
     
 }
@@ -64,7 +64,7 @@ body{
     height: 60vh;
     scroll-snap-align: start;
     animation: fadeIn 1.7s ease-in-out forwards;
-    margin-bottom: 150%;
+    margin-bottom: 70%;
 }
 
 @keyframes fadeIn {
@@ -101,7 +101,7 @@ nav {
 }
 
 nav a {
-    color: red;
+    color: white;
     text-decoration: none;
     padding: 10px 30px;
     font-weight: bold;
@@ -109,7 +109,7 @@ nav a {
 
 nav a:hover {
     letter-spacing: 10px;
-    color: #333;
+    color: #d10206;
     animation: hoverSpacingAnimation 2s ease-out;
 }
 
