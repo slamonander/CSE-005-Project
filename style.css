@@ -41,6 +41,10 @@ h1 {
 
 }
 
+.title {
+    font-size: 50px;
+}
+
 /* Experimenting with Title hover effect ... */
 /* .title {
     font-size: 50px;
