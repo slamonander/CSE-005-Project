@@ -7,6 +7,23 @@ body{
     overflow: hidden; /* Hiding scroll bar */
 }
 
+/* TITLE */
+
+.title {
+    letter-spacing: 20px;
+    animation: letterSpacingAnimation 2s ease-out;
+    font-size: 65px;
+}
+
+@keyframes letterSpacingAnimation {
+    from {
+        letter-spacing: 0;
+    } to {
+        letter-spacing: 20px;
+    }
+}
+
+/* MAIN CONTENTS */
 .main-container{
     height: 60vh;
     scroll-snap-type: y mandatory;
@@ -27,7 +44,7 @@ body{
     padding: 10px 10px;
     height: 60vh;
     scroll-snap-align: start;
-    animation: fadeIn 1s ease-in-out forwards;
+    animation: fadeIn 1.7s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -48,9 +65,8 @@ h1 {
 
 }
 
-.title {
-    font-size: 65px;
-}
+
+/* NAVIGATION BAR */
 
 nav {
     display: flex;
@@ -62,8 +78,19 @@ nav a {
     color: red;
     text-decoration: none;
     padding: 10px 30px;
+    font-weight: bold;
 }
 
 nav a:hover {
+    letter-spacing: 10px;
     color: #333;
-} 
+    animation: hoverSpacingAnimation 2s ease-out;
+}
+
+@keyframes hoverSpacingAnimation {
+    from {
+        letter-spacing: 0;
+    } to {
+        letter-spacing: 10px;
+    }
+}
