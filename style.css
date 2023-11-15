@@ -3,7 +3,22 @@ body{
     background-color: white;
     font-family: 'Inter Tight', sans-serif;
     margin: 20px;
+    overflow-y: auto; /* Enabling vertical scrolling */
 }
+
+/* Experimenting scroll-snapping navigation ... */
+.main-container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* ... Experimenting scroll-snapping navigation */
 
 
 h1 {
