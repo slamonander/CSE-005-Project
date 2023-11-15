@@ -25,6 +25,7 @@ body{
 }
 
 .container {
+    padding: 10px 10px;
     height: 100vh;
     scroll-snap-align: start;
 }
