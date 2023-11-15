@@ -4,13 +4,16 @@ body{
     font-family: 'Inter Tight', sans-serif;
     margin: 20px;
     overflow-y: auto; /* Enabling vertical scrolling */
+    overflow: hidden; /* Hiding scroll bar */
 }
 
 /* Experimenting scroll-snapping navigation ... */
 .main-container{
-    height: 100vh;
+    height: 50vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
 .container {
@@ -29,7 +32,8 @@ h1 {
 
 }
 
-.title {
+/* Experimenting with Title hover effect ... */
+/* .title {
     font-size: 50px;
     letter-spacing: 30px;
     overflow: hidden;
@@ -48,12 +52,14 @@ h1 {
 }
 
 .title:hover::before {
-    background: rgba(255,255,255,0.5);
-}
+    background: rgba(255,255,255,0.5); */
+/* } */
+
+/* ... Experimenting with Title hover effect*/
 
 nav {
     display: flex;
-    padding: 5px;
+    padding: 10px;
     justify-content: center;
 }
 
