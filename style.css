@@ -12,8 +12,16 @@ body{
     height: 50vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+    
+}
+
+.main-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-container::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .container {
