@@ -107,3 +107,23 @@ nav a:hover {
         letter-spacing: 10px;
     }
 }
+
+/* RIGHT CORNER CAPTION */
+.caption-text {
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    padding: 5px;
+    font-size: 12px;
+    opacity: 0;
+    animation: fadeOut 10s ease-in;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
