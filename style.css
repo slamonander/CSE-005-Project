@@ -4,8 +4,8 @@ body{
     background-color: white;
     font-family: 'Inter Tight', sans-serif;
     margin: 3%;
-    overflow-y: auto; /* Enabling vertical scrolling */
-    overflow: hidden; /* Hiding scroll bar */
+    /* overflow-y: auto; Enabling vertical scrolling */
+    /* overflow: hidden; Hiding scroll bar */
 }
 
 /* SCREENS' RESPONSIVENESS */
@@ -44,9 +44,9 @@ body{
 /* MAIN CONTAINER */
 .main-container{
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scrollbar-color: transparent transparent;
+    scrollbar-color: transparent transparent; */
     
 }
 
