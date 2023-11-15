@@ -1,3 +1,4 @@
+/* GENERAL HTML STYLING */
 body{
     color: #d10206;
     background-color: white;
@@ -23,7 +24,7 @@ body{
     }
 }
 
-/* MAIN CONTENTS */
+/* MAIN CONTAINER */
 .main-container{
     height: 60vh;
     scroll-snap-type: y mandatory;
@@ -40,6 +41,7 @@ body{
     background: transparent;
 }
 
+/* CONTAINER */
 .container {
     padding: 10px 10px;
     height: 60vh;
@@ -56,7 +58,7 @@ body{
     }
 }
 
-
+/* HEADING */
 h1 {
     font-weight: 700px;
     letter-spacing: 5px;
