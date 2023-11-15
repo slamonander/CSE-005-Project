@@ -2,14 +2,14 @@ body{
     color: #d10206;
     background-color: white;
     font-family: 'Inter Tight', sans-serif;
-    margin: 20px;
+    margin: 30px;
     overflow-y: auto; /* Enabling vertical scrolling */
     overflow: hidden; /* Hiding scroll bar */
 }
 
 /* Experimenting scroll-snapping navigation ... */
 .main-container{
-    height: 50vh;
+    height: 60vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scrollbar-color: transparent transparent;
@@ -42,7 +42,7 @@ h1 {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 65px;
 }
 
 /* Experimenting with Title hover effect ... */
