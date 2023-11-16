@@ -84,13 +84,13 @@ body{
 
 /* CONTAINER */
 .container {
-    padding: 2%;
+    padding: 20px;
     height: 60vh;
     /* scroll-snap-align: start; */
     animation: fadeIn 1.7s ease-in-out forwards;
-    margin-top: 10%;
-    margin-bottom: 50%;
+    margin-bottom: 100%;
 }
+
 
 @keyframes fadeIn {
     from {
