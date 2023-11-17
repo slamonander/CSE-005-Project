@@ -26,8 +26,11 @@ body{
 
 /* CONTENT EXCLUDING NAV BAR */
 .content {
-    margin-top: 20%;
+    margin-top: 2%;
     padding: 5%;
+}
+.right-align {
+    text-align: right;
 }
 
 /* TITLE */
@@ -115,6 +118,16 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: #FFD700;
+}
+
+p {
+    margin-bottom:100px;
+}
+
+
+
 
 /* NAVIGATION BAR */
 
@@ -133,7 +146,7 @@ nav a {
 
 nav a:hover {
     letter-spacing: 10px;
-    color: #d10206;
+    color: #FFD700;
     animation: hoverSpacingAnimation 2s ease-out;
 }
 
