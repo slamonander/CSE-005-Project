@@ -11,6 +11,11 @@ body{
     background-size: 390px 330px;
 }
 
+img {
+    display: inline-block;
+    margin: 15%;
+}
+
 
 /* SCREENS' RESPONSIVENESS */
 @media screen and (max-width: 600px) { 
