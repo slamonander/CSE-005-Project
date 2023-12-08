@@ -6,9 +6,13 @@ body {
 }
 
 .title {
-    font-size: 60px;
+    font-size: 80px;
     letter-spacing: 1vw;
     animation: letterSpace 2s ease-in-out;
+}
+
+#subtitle {
+    text-align: right;
 }
 
 @keyframes letterSpace {
@@ -22,13 +26,13 @@ body {
 
 /* Navigation */
 
-nav {
+.homenav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
 }
-nav a {
+.homenav a{
     letter-spacing: 0.2vw;
     padding-right:0;
     font-weight: bold;
@@ -37,16 +41,94 @@ nav a {
     width: 50%;
 }
 
-nav a:hover {
+.homenav a:hover {
     color: #FFD700;
     animation: hoverAnimation 1s ease-in;
 }
 
-nav a svg {
+.homenav a:hover svg {
+    fill: #FFD700;
+}
+
+.homenav a svg{
     transform: translateY(7px);
     animation: floatAnimation 3s ease-in-out infinite;
     fill: white;
 }
+
+/* Navigation in types page */
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu svg{
+    width: 50px;
+    height: 50px;
+    fill: white;
+    border: 3px solid;
+}
+
+.mainnav {
+    margin-top: 2vh;
+    width: 40%;
+    border: 1px solid;
+    display: none;
+    flex-direction: column;
+}
+
+.mainnav a{
+    letter-spacing: 0.2vw;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+}
+
+.mainnav a:hover {
+    color: white;
+    animation: hoverAnimation 1s ease-in;
+    background-color: #FFD700;
+}
+
+.mainnav.show {
+    display: flex;
+}
+
+/* Navigation that navigates in the types page */
+
+.pagenav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10vh;
+}
+
+.pagenav a {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.2vw;
+}
+
+.pagenav a:hover {
+    animation:upDownFloat 2s ease-in-out infinite;
+}
+
+/* Animations */
+
+@keyframes upDownFloat {
+    0%, 100% {
+        transform: translate(0,0);
+    } 50% {
+        transform: translate(0, 7px);
+    }
+}
+
 
 @keyframes floatAnimation {
     0%, 100% {
@@ -64,4 +146,38 @@ nav a svg {
         letter-spacing: 0.2vw;
         color:#FFD700;
     }
+}
+
+/* Headers */
+
+h2 {
+    margin-top: 5rem;
+    font-size: 35px;
+    animation: upDownFloat 2s ease-in-out infinite;
+}
+
+span.colored-text {
+    color:#FFD700;
+}
+
+h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    margin: 10vh 0vh 0vh;
+}
+
+p {
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Top SVGs */
+
+.container svg {
+    fill: white;
+}
+
+.container svg:hover {
+    fill:#FFD700;
+    animation: upDownFloat 2s ease-in-out infinite;
 }
