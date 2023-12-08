@@ -1,0 +1,52 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Inter Tight', sans-serif;
+    padding: 5% 5%;
+}
+
+.title {
+    font-size: 60px;
+    letter-spacing: 1.25vw;
+    animation: letterSpace 2s ease-in-out;
+}
+
+@keyframes letterSpace {
+    from {
+        letter-spacing: 0;
+    } to {
+        letter-spacing: 1.25vw;
+    }
+    
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+nav a {
+    letter-spacing: 0.2vw;
+    margin: 2%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFD700;
+    animation: hoverAnimation 0.5s ease-in;
+}
+
+@keyframes hoverAnimation {
+    from {
+        letter-spacing: 0;
+        color: white;
+    } to {
+        letter-spacing: 0.2vw;
+        color:#FFD700;
+    }
+}

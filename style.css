@@ -136,8 +136,96 @@ p {
 
 /* NAVIGATION BAR */
 
-nav {
+/* EXPERIMENTING NAV */
+
+.navbar {
+    width: 5rem;
+    height: 100vh; 
+    position: fixed;
+    background-color: aliceblue;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+.nav-items:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #FFD700;
+    filter: grayscale(100%) opacity(0.7);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: gainsboro;
+    color:#FFD700;
+    animation: fadingOpacity ease-in 2s;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+@keyframes fadingOpacity {
+    from {
+        opacity: 0.5;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* Navigation on Right Side */
+/* nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: right;
+}
+
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    letter-spacing: 10px;
+    color: #FFD700;
+    animation: hoverSpacingAnimation 2s ease-out;  Debating on keeping, may remove 
+} */
+
+
+
+/* BEFORE */
+
+/* nav {
+    display: flex; 
     padding: 10px;
     justify-content: center;
 }
@@ -156,6 +244,8 @@ nav a:hover {
     color: #FFD700;
     animation: hoverSpacingAnimation 2s ease-out;
 }
+
+*/
 
 @keyframes hoverSpacingAnimation {
     from {
