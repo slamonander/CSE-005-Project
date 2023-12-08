@@ -59,20 +59,25 @@ body {
 /* Navigation in types page */
 
 .hamburger-menu {
-    cursor: pointer;
+    cursor: crosshair;
+    height: 50px;
+    width: 50px;
+    transition: transform 3s ease;
+    border: 3px solid;
+}
+
+.hamburger-menu.clicked {
+    transform: rotate(90deg);
 }
 
 .hamburger-menu svg{
-    width: 50px;
-    height: 50px;
     fill: white;
-    border: 3px solid;
 }
 
 .mainnav {
     margin-top: 2vh;
     width: 40%;
-    border: 1px solid;
+    border: 2px solid;
     display: none;
     flex-direction: column;
 }
@@ -82,14 +87,14 @@ body {
     padding: 20px 20px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: 0.2vw;
 }
 
 .mainnav a:hover {
-    color: white;
-    animation: hoverAnimation 1s ease-in;
-    background-color: #FFD700;
+    color: #FFD700;
+    font-style: italic;
+    animation: upDownFloat 3s ease-in-out infinite;
 }
 
 .mainnav.show {
