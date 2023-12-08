@@ -1,276 +1,183 @@
-/* GENERAL HTML STYLING */
-body{
-    color: white; /* #d10206; alt color*/
+body {
+    color: white;
     background-color: black;
     font-family: 'Inter Tight', sans-serif;
-    margin: 3%;
-    /* overflow-y: auto; Enabling vertical scrolling */
-    /* overflow: hidden; Hiding scroll bar */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.329) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.329) 1px, black 1px);
-    background-size: 390px 330px;
+    padding: 5% 5%;
 }
 
-img {
-    display: inline-block;
-    margin: 15%;
+.title {
+    font-size: 80px;
+    letter-spacing: 1vw;
+    animation: letterSpace 2s ease-in-out;
 }
 
-
-/* SCREENS' RESPONSIVENESS */
-@media screen and (max-width: 600px) { 
-    .title {
-        letter-spacing: 1%;
-        font-size: 4vw;
-    }
-    .container {
-        margin-bottom: 50%;
-    }
-    
-}
-
-/* CONTENT EXCLUDING NAV BAR */
-.content {
-    margin-top: 6%;
-    padding: 5%;
-}
-.right-align {
+#subtitle {
     text-align: right;
 }
 
-/* TITLE */
-
-.style-title {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 90px;
-    font-weight: 600;
-    letter-spacing: 1.25vw;
-}
-
-.vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 5%;
-    animation: fadeIn 2s forwards;
-}
-
-.horizontal {
-    animation: letterSpacingAnimation 2s ease-out;
-}
-
-.vertical .letter {
-    letter-spacing: 1.25vw;
-}
-
-@keyframes letterSpacingAnimation {
+@keyframes letterSpace {
     from {
         letter-spacing: 0;
     } to {
-        letter-spacing: 1.25vw;
+        letter-spacing: 1vw;
     }
-}
-
-/* MAIN CONTAINER */
-.main-container{
-    height: 100vh;
-    /* scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scrollbar-color: transparent transparent; */
     
 }
 
-.main-container::-webkit-scrollbar {
-    width: 0;
+/* Navigation */
+
+.homenav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.homenav a{
+    letter-spacing: 0.2vw;
+    padding-right:0;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    width: 50%;
 }
 
-.main-container::-webkit-scrollbar-track {
-    background: transparent;
+.homenav a:hover {
+    color: #FFD700;
+    animation: hoverAnimation 1s ease-in;
 }
 
-/* CONTAINER */
-.container {
-    padding: 20px;
-    height: 60vh;
-    /* scroll-snap-align: start; */
-    animation: fadeIn 1.7s ease-in-out forwards;
-    margin-bottom: 100%;
+.homenav a:hover svg {
+    fill: #FFD700;
+}
+
+.homenav a svg{
+    transform: translateY(7px);
+    animation: floatAnimation 3s ease-in-out infinite;
+    fill: white;
+}
+
+/* Navigation in types page */
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu svg{
+    width: 50px;
+    height: 50px;
+    fill: white;
+    border: 3px solid;
+}
+
+.mainnav {
+    margin-top: 2vh;
+    width: 40%;
+    border: 1px solid;
+    display: none;
+    flex-direction: column;
+}
+
+.mainnav a{
+    letter-spacing: 0.2vw;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+}
+
+.mainnav a:hover {
+    color: white;
+    animation: hoverAnimation 1s ease-in;
+    background-color: #FFD700;
+}
+
+.mainnav.show {
+    display: flex;
+}
+
+/* Navigation that navigates in the types page */
+
+.pagenav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10vh;
+}
+
+.pagenav a {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.2vw;
+}
+
+.pagenav a:hover {
+    animation:upDownFloat 2s ease-in-out infinite;
+}
+
+/* Animations */
+
+@keyframes upDownFloat {
+    0%, 100% {
+        transform: translate(0,0);
+    } 50% {
+        transform: translate(0, 7px);
+    }
 }
 
 
-@keyframes fadeIn {
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translate(7px, 7px);
+    } 50% {
+        transform: translate(0px, 7px);
+    }
+}
+
+@keyframes hoverAnimation {
     from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
+        letter-spacing: 0;
+        color: white;
+    } to {
+        letter-spacing: 0.2vw;
+        color:#FFD700;
     }
 }
 
-/* HEADING */
-h1 {
-    font-size: 45px;
-    font-weight: 700px;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-top: 50px;
-}
+/* Headers */
 
 h2 {
-    font-size: 20px;
-    text-align: center;
+    margin-top: 5rem;
+    font-size: 35px;
+    animation: upDownFloat 2s ease-in-out infinite;
 }
 
-h3 {
-    color: #FFD700;
+span.colored-text {
+    color:#FFD700;
+}
+
+h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    margin: 10vh 0vh 0vh;
 }
 
 p {
-    margin-bottom:100px;
-}
-
-
-
-
-/* NAVIGATION BAR */
-
-/* EXPERIMENTING NAV */
-
-.navbar {
-    width: 5rem;
-    height: 100vh; 
-    position: fixed;
-    background-color: aliceblue;
-}
-
-.navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-}
-
-.nav-items {
-    width: 100%;
-}
-
-.nav-items:last-child {
-    margin-top: auto;
-}
-
-.nav-link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: #FFD700;
-    filter: grayscale(100%) opacity(0.7);
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-    background: gainsboro;
-    color:#FFD700;
-    animation: fadingOpacity ease-in 2s;
-}
-
-.link-text {
-    display: none;
-    margin-left: 1rem;
-}
-
-.nav-link svg {
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
-}
-
-@keyframes fadingOpacity {
-    from {
-        opacity: 0.5;
-    } to {
-        opacity: 1;
-    }
-}
-
-/* Navigation on Right Side */
-/* nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: right;
-}
-
-nav a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    letter-spacing: 10px;
-    color: #FFD700;
-    animation: hoverSpacingAnimation 2s ease-out;  Debating on keeping, may remove 
-} */
-
-
-
-/* BEFORE */
-
-/* nav {
-    display: flex; 
-    padding: 10px;
-    justify-content: center;
-}
-
-nav a {
+    font-weight: 500;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    padding: 1% 3%;
-    font-weight: bold;
 }
 
-nav a:hover {
-    letter-spacing: 10px;
-    color: #FFD700;
-    animation: hoverSpacingAnimation 2s ease-out;
+/* Top SVGs */
+
+.container svg {
+    fill: white;
 }
 
-*/
-
-@keyframes hoverSpacingAnimation {
-    from {
-        letter-spacing: 0;
-    } to {
-        letter-spacing: 10px;
-    }
+.container svg:hover {
+    fill:#FFD700;
+    animation: upDownFloat 2s ease-in-out infinite;
 }
-
-/* RIGHT CORNER CAPTION */
-/* .caption-text {
-    position: absolute;
-    top: 200px;
-    right: 150px;
-    padding: 5px;
-    font-size: 12px;
-    opacity: 0;
-    animation: fadeOut 10s ease-in;
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-} */
