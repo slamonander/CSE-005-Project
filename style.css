@@ -26,7 +26,7 @@ body {
 
 /* Navigation */
 
-.homenav {
+/* .homenav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -35,7 +35,8 @@ body {
 .homenav a{
     letter-spacing: 0.2vw;
     padding-right:0;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 900;
     color: white;
     text-decoration: none;
     width: 50%;
@@ -46,17 +47,17 @@ body {
     animation: hoverAnimation 1s ease-in;
 }
 
-.homenav a:hover svg {
-    fill: #FFD700;
-}
-
 .homenav a svg{
-    transform: translateY(7px);
+    transform: translateY(3px);
     animation: floatAnimation 3s ease-in-out infinite;
     fill: white;
 }
 
-/* Navigation in types page */
+.homenav a:hover svg {
+    fill: #FFD700;
+} */
+
+/* Hamburgur */
 
 .hamburger-menu {
     cursor: crosshair;
@@ -137,9 +138,9 @@ body {
 
 @keyframes floatAnimation {
     0%, 100% {
-        transform: translate(7px, 7px);
+        transform: translate(3px, 3px);
     } 50% {
-        transform: translate(0px, 7px);
+        transform: translate(0px, 3px);
     }
 }
 
@@ -153,7 +154,7 @@ body {
     }
 }
 
-/* Headers */
+/* Bunch of content formatting */
 
 h2 {
     margin-top: 5rem;

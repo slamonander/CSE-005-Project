@@ -11,17 +11,65 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap" rel="stylesheet">  
     </head>
 <body>
+    <div class="hamburger-menu">
+        <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M97.092 36.078H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zM97.092 61.889H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zM97.092 87.7H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222z"/></svg>
+    </div>
+
+    <nav class="mainnav">
+        <a href="index.html">home</a>
+        <a href="#link1">malware security</a>
+        <a href="#link2">mobile malware</a>
+        <a href="#link3">history of malware</a>
+        <a href="#link4">famous malware attacks</a>
+        <a href="#link5">malware removal</a>
+        <a href="types.html">types of malware</a>
+    </nav>
 
     <h1 class="title">malwares.</h1>
 
-    <nav class="homenav">
-        <a href="#home">home. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-        <a href="#link1">malware security. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-        <a href="#link2">mobile malware. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-        <a href="#link3">history of malware. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-        <a href="#link4">famous malware attacks. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-        <a href="#link5">malware removal. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-        <a href="types.html">types of malware. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg></a>
-    </nav>  
+    
+
+    <div class="introcontainer">
+        <h2 id="introduction">
+            introduction.
+        </h2>
+        <p>In today's digital era, the rapid growth of technology and interconnected systems has brought about unparallel 
+            convenience and efficiency. However, this expansion has also paved the way for malicious software, or <span class="colored-text">malware</span>.
+            <br><br>
+            Malware encompasses a broad spectrum of harmful programs designed to <span class="colored-text">infiltrate, damage, or exploit any computer, server, client, or computer network 
+            without the owner's informed consent.</span> Ranging from viruses and worms to ransomware and spyware, these malicious entities stealthily operate in the 
+            background, aiming to steal sensitive data, disrupt operations, or gain unauthorized access.
+            <br><br>
+            As the digital frontier continues to evolve, understanding and safeguarding against malware becomes paramount for users, businesses, and institutions 
+            worldwide. Dive deeper with us to explore the intricate world of malware and discover ways to fortify your digital domain.
+        </p>
+
+        <h2>
+            people.
+        </h2>
+        <p>christine doan, bedri uzulmez, matt ceran, natalle matta, amanuel mengistu, rob celis</p>
+        <br><br>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var hamburger = document.querySelector('.hamburger-menu');
+            var mainNav = document.querySelector('.mainnav');
+
+            hamburger.addEventListener('click', function() {
+                mainNav.classList.toggle('show');
+                hamburger.classList.toggle('clicked');
+            });
+        });
+    </script>
+
+    <!-- <nav class="homenav">
+        <a href="#link1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg> malware security </a>
+        <a href="#link2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg> mobile malware </a>
+        <a href="#link3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg> history of malware </a>
+        <a href="#link4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg> famous malware attacks </a>
+        <a href="#link5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg> malware removal </a>
+        <a href="types.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg> types of malware </a>
+    </nav>   -->
 </body>
 </html>
