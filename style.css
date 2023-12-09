@@ -177,6 +177,11 @@ p {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.author {
+    font-weight: bold;
+    text-align: right;
+    animation: upDownFloat 3s ease-in-out infinite;
+}
 /* Top SVGs */
 
 .container svg {
